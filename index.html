@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Distributed File Sharing</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Distributed File Sharing Application</h1>
+        <div id="auth">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="file-upload" style="display:none;">
+            <h2>Upload File</h2>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Upload</button>
+        </div>
+        <div id="file-download" style="display:none;">
+            <h2>Download File</h2>
+            <input type="text" id="fileName" placeholder="File Name">
+            <button onclick="downloadFile()">Download</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
